@@ -2,18 +2,9 @@
 padding:0;
 margin-top:0;
 }
-/* 1. Fuerza el formato horizontal al mandar a imprimir o guardar como PDF */
-@media print {
-    @page {
-        size: landscape;
-        margin: 0; /* Opcional: elimina márgenes por defecto de la impresora */
-    }
+.texto-vertical {
+    writing-mode: vertical-lr;
 }
-
-/* 2. Adapta la visualización en pantalla de las tarjetas principales si usas un ancho fijo */
-.cv-card, .action-bar {
-    max-width: 1120px; /* Cambia de 800px a 1120px (proporción aproximada de una hoja A4 horizontal) */
-    width: 100%;
 body{
 background-color:#40d9df;
 }
